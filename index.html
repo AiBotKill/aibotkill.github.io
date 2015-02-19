@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>BotKill2015</title>
+</head>
+<body style="background-color:#000;">
+
+ <img id="logo" src="./logo.png" style="display:block;margin-left: auto; margin-right: auto;"/>
+<script>
+	var img = document.getElementById("logo");
+	var rot = 0.0;
+	setInterval(function(){
+		if (rot > 360) rot -= 360;
+		rot+=1;
+		img.style.webkitTransform = "rotateY("+rot+"deg)";
+	},1000/30);
+</script>
+</body>
+</html>
